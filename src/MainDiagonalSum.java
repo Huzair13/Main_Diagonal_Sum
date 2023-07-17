@@ -21,11 +21,7 @@ public class MainDiagonalSum{
     private static int mainDiagonalSum(int[][] array, int sizeRow, int sizeColumn) {
         int sum=0;
         for(int i=0;i<sizeRow;i++){
-            for(int j=0;j<sizeColumn;j++){
-                if(i==j){
-                    sum+=array[i][j];
-                }
-            }
+            sum+=array[i][i];
         }
         return sum;
     }
